@@ -1,6 +1,6 @@
 # Dependency directories
-node_modules/
-package-lock.js
+/node_modules
+package-lock.json
 # dotenv environment variable files
 .env
 .env.development.local
@@ -8,4 +8,5 @@ package-lock.js
 .env.production.local
 .env.local
 # Build / generate output
-dist
+/dist
+/build

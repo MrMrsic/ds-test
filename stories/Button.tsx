@@ -1,16 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './button.css';
+import React from "react";
+import PropTypes from "prop-types";
+//import './button.css';
+import styles from "./Button.module.css";
+import classNames from "classnames/bind";
+let cx = classNames.bind(styles);
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = ({
+  primary,
+  backgroundColor,
+  size,
+  label,
+  ...props
+}: any) => {
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={cx(styles.button, size, {
+        primary: primary,
+        secondary: !primary,
+      })}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
@@ -31,7 +42,7 @@ Button.propTypes = {
   /**
    * How large should the button be?
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(["small", "medium", "large"]),
   /**
    * Button contents
    */
@@ -45,6 +56,6 @@ Button.propTypes = {
 Button.defaultProps = {
   backgroundColor: null,
   primary: false,
-  size: 'medium',
+  size: "medium",
   onClick: undefined,
 };
