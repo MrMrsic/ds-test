@@ -105,8 +105,9 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
-    "jsx": "react-jsx",
+    //"jsx": "react-jsx",
+    "jsx": "preserve",
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
-  "include": ["*.d.ts", "./styles.d.ts"]
+  "include": ["*.d.ts", "./globals.d.ts"]
 }
