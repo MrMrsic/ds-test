@@ -1,4 +1,7 @@
 /** @type { import('@storybook/react').Preview } */
+
+import "monday-ui-react-core/tokens";
+
 const preview = {
   parameters: {
     controls: {
