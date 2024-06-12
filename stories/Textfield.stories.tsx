@@ -1,5 +1,5 @@
 import { fn } from "@storybook/test";
-import { Textfield } from "../components/Textfield";
+import { Textfield } from "../src/components/Textfield";
 
 export default {
   title: "Example/Textfield",
