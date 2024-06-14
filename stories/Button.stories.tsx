@@ -1,58 +1,45 @@
 import { fn } from "@storybook/test";
+import { Meta, StoryObj } from "@storybook/react";
+import { ButtonProps } from "antd";
 import { Button } from "../src/components/Button";
+import React from "react";
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-export default {
+const meta: Meta<typeof Button> = {
   title: "Example/Button",
   component: Button,
-  parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: "centered",
-  },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ["autodocs"],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {
-    //backgroundColor: { control: "color" },
-  },
-  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
 };
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Primary = {
+export default meta;
+type Story = StoryObj<typeof Button>;
+
+export const Default: Story = {
   args: {
     type: "primary",
     children: "Primary",
+    className: "test-class",
   },
 };
 
-export const Secondary = {
-  args: {
-    size: "medium",
-    type: "",
-    children: "Secondary",
-  },
+export const States = {
+  render: () => (
+    <>
+      <Button size="small">Small</Button>
+      <Button>Medium</Button>
+      <Button size="large">Large</Button>
+    </>
+  ),
+
+  name: "Sizes",
 };
 
-export const Large = {
-  args: {
-    size: "large",
-    children: "Large Button",
+const ListTemplate: Story = {
+  render: () => {
+    return (
+      <>
+        <Button>Regular</Button>
+        <Button type="primary">Primary</Button>
+      </>
+    );
   },
 };
-
-export const Small = {
-  args: {
-    size: "small",
-    children: "Small Button",
-  },
-};
-
-/*export const Warning = {
-  args: {
-    primary: true,
-    label: "Delete now",
-    backgroundColor: "red",
-  },
-};*/
