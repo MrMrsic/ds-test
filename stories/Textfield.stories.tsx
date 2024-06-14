@@ -27,7 +27,7 @@ export const Small = {
   args: {
     placeholder: "Small component",
     title: "Label",
-    className: "custom-class",
+    className: "custom-class textField",
     size: "small",
   },
 };

@@ -111,7 +111,7 @@ const defaultProps: TextfieldProps = {
   title: "",
   size: TextField.sizes.SMALL,
   validation: { status: "success", text: "" },
-  wrapperClassName: "",
+  wrapperClassName: styles.textField,
   onIconClick: () => {},
   clearOnIconClick: false,
   labelIconName: "",
