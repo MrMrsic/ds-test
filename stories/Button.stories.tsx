@@ -22,30 +22,30 @@ export default {
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary = {
   args: {
-    kind: "PRIMARY",
-    label: "Primary",
+    type: "primary",
+    children: "Primary",
   },
 };
 
 export const Secondary = {
   args: {
     size: "medium",
-    kind: "SECONDARY",
-    label: "Secondary",
+    type: "",
+    children: "Secondary",
   },
 };
 
 export const Large = {
   args: {
-    size: "LARGE",
-    label: "Large Button",
+    size: "large",
+    children: "Large Button",
   },
 };
 
 export const Small = {
   args: {
-    size: "SMALL",
-    label: "Small Button",
+    size: "small",
+    children: "Small Button",
   },
 };
 

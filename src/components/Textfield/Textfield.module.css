@@ -1,4 +1,6 @@
+@import "../../styles/vibe.css";
+
 .textfield {
-  font-family: "Arial, sans-serif";
+  font-family: "Arial", sans-serif;
   font-weight: 400;
 }

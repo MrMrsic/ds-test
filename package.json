@@ -1,6 +1,6 @@
 {
   "name": "test-monday-ui-react-core",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
@@ -21,6 +21,7 @@
     "@storybook/addon-styling-webpack": "^1.0.0",
     "@storybook/react": "^8.1.6",
     "@types/classnames": "^2.3.1",
+    "antd": "^5.18.1",
     "del-cli": "^5.1.0",
     "monday-ui-react-core": "^2.113.0",
     "monday-ui-style": "^0.7.0",
