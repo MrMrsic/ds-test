@@ -8,7 +8,7 @@ import React from "react";
 const { TextArea } = Input;
 
 const meta: Meta<typeof Textfield> = {
-  title: "Example/Textfield",
+  title: "Inputs/Textfield",
   component: Textfield,
   tags: ["autodocs"],
   parameters: {

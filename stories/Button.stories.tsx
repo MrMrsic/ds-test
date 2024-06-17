@@ -8,7 +8,7 @@ import { Markdown, Description } from "@storybook/blocks";
 import React from "react";
 
 const meta: Meta<typeof Button> = {
-  title: "Example/Button",
+  title: "Buttons/Button",
   component: Button,
   tags: ["autodocs"],
   parameters: {
