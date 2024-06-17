@@ -1,6 +1,11 @@
 @import "../../styles/cssGlobalVars.css";
 
-.iki_textfield_wrapper {
+.iki_select_wrapper {
+}
+.iki_select {
+}
+.iki_select:hover :global(.ant-select-selector) {
+  border-color: var(--hoverBorderColor) !important;
 }
 
 .label_holder {
@@ -19,9 +24,6 @@
   font-family: var(--main-font-family);
   font-size: 14px;
   margin-bottom: 4px;
-}
-
-.iki_textfield {
 }
 
 .helperText_holder {
