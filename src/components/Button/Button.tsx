@@ -1,5 +1,6 @@
 import React from "react";
 import { Button as AntButton, ButtonProps, ConfigProvider } from "antd";
+import lightTheme from "../../styles/lightAntdTheme";
 import styles from "./Button.module.css";
 import classNames from "classnames/bind";
 let cx = classNames.bind(styles);
@@ -26,8 +27,12 @@ export const Button = (props: ButtonProps) => {
     <ConfigProvider
       wave={{ disabled: true }}
       theme={{
-        token: { motion: false, fontFamily: "Inter, sans-serif" },
-        components: { Button: ButtonStyles },
+        token: {
+          motion: false,
+          fontFamily: "Inter, sans-serif",
+          ...lightTheme,
+        },
+        //components: { Button: ButtonStyles },
       }}
     >
       <AntButton {...props} className={classes}>

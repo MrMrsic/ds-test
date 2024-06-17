@@ -8,7 +8,7 @@ const preview = {
         date: /Date$/i,
       },
     },
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    //actions: { argTypesRegex: "^on[A-Z].*" },
   },
 };
 
