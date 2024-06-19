@@ -1,0 +1,18 @@
+@import "../../styles/cssGlobalVars.css";
+
+.iki_radio {
+  color: var(--mainTextColor) !important;
+}
+
+.iki_radio :global(.ant-radio-inner) {
+  /*border: 1px solid #e3e9ef;*/
+}
+
+.iki_radio:hover :global(.ant-radio .ant-radio-inner) {
+  border-color: var(--mainTextColor) !important;
+}
+
+.iki_radio :global(.ant-radio.ant-radio-checked .ant-radio-inner) {
+  background-color: var(--mainTextColor) !important;
+  border-color: var(--mainTextColor) !important;
+}

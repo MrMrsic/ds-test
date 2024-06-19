@@ -1,10 +1,11 @@
 @import "../../styles/cssGlobalVars.css";
 
 .iki_checkbox {
+  color: var(--mainTextColor) !important;
 }
 
 .iki_checkbox :global(.ant-checkbox-inner) {
-  border: 1px solid #e3e9ef;
+  /* border: 1px solid #e3e9ef;*/
 }
 
 .iki_checkbox:hover :global(.ant-checkbox .ant-checkbox-inner) {
