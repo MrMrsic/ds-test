@@ -36,7 +36,7 @@ export const Modal = (props: ModalProps) => {
           fontFamily: "Inter, sans-serif",
           ...lightTheme,
         },
-        components: { Select: ModalStyles },
+        components: { Modal: ModalStyles },
       }}
     >
       <AntModal

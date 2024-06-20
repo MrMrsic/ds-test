@@ -24,7 +24,7 @@ export const Checkbox = (props: AntCheckboxProps) => {
           fontFamily: "Inter, sans-serif",
           ...lightTheme,
         },
-        components: { Select: CheckboxStyles },
+        components: { Checkbox: CheckboxStyles },
       }}
     >
       <AntCheckbox {...props} className={classes} />

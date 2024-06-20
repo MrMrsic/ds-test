@@ -22,7 +22,7 @@ const meta: Meta<typeof Checkbox> = {
 export default meta;
 type Story = StoryObj<typeof Checkbox>;
 
-export const Sizes = {
+export const Overview = {
   render: () => {
     return (
       <>
@@ -32,6 +32,41 @@ export const Sizes = {
   },
 
   name: "Overview",
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
+    },
+  },
+};
+
+export const GroupButtons = {
+  render: () => {
+    const optionsWithDisabled = [
+      { label: "Apple", value: "Apple" },
+      { label: "Pear", value: "Pear" },
+      { label: "Orange", value: "Orange", disabled: false },
+    ];
+    const onChange = (checkedValues: any) => {
+      console.log("onChange checkedValues: ", checkedValues);
+    };
+    return (
+      <>
+        <Space direction="vertical" size="middle">
+          <Space.Compact>
+            <Checkbox.Group
+              options={optionsWithDisabled}
+              defaultValue={["Apple"]}
+              onChange={onChange}
+            />
+          </Space.Compact>
+        </Space>
+      </>
+    );
+  },
+
+  name: "Group as Buttons",
   parameters: {
     docs: {
       description: {

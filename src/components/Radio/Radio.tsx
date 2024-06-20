@@ -10,17 +10,18 @@ import classNames from "classnames/bind";
 let cx = classNames.bind(styles);
 
 interface RadioProps extends AntRadioProps {
-  isGroup?: boolean;
+  isButton?: boolean;
 }
 
 const RadioStyles: any = {};
 
 export const Radio = (props: RadioProps) => {
   let classes: any = "";
-  if (props?.isGroup) {
+
+  if (props?.isButton) {
     classes = props?.className
-      ? `${styles.iki_radio_group} ${props?.className}`
-      : styles.iki_radio_group;
+      ? `${styles.iki_radio_button} ${props?.className}`
+      : styles.iki_radio_button;
   } else {
     classes = props?.className
       ? `${styles.iki_radio} ${props?.className}`
@@ -35,13 +36,11 @@ export const Radio = (props: RadioProps) => {
           fontFamily: "Inter, sans-serif",
           ...lightTheme,
         },
-        components: { Select: RadioStyles },
+        components: { Radio: RadioStyles },
       }}
     >
-      {props?.isGroup ? (
-        <AntRadio.Group {...props} className={classes}>
-          {props?.children}
-        </AntRadio.Group>
+      {props?.isButton ? (
+        <AntRadio.Button {...props} className={classes} />
       ) : (
         <AntRadio {...props} className={classes} />
       )}
