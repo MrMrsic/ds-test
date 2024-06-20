@@ -6,6 +6,7 @@ const lightTheme: any = {
   colorError: "#fe4646",
   borderRadius: 4,
   colorTextBase: "#10181b",
+  tooltipBg: "#414D5A",
 };
 
 export default lightTheme;
