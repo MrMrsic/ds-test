@@ -40,38 +40,3 @@ export const Overview = {
     },
   },
 };
-
-export const GroupButtons = {
-  render: () => {
-    const optionsWithDisabled = [
-      { label: "Apple", value: "Apple" },
-      { label: "Pear", value: "Pear" },
-      { label: "Orange", value: "Orange", disabled: false },
-    ];
-    const onChange = (checkedValues: any) => {
-      console.log("onChange checkedValues: ", checkedValues);
-    };
-    return (
-      <>
-        <Space direction="vertical" size="middle">
-          <Space.Compact>
-            <Checkbox.Group
-              options={optionsWithDisabled}
-              defaultValue={["Apple"]}
-              onChange={onChange}
-            />
-          </Space.Compact>
-        </Space>
-      </>
-    );
-  },
-
-  name: "Group as Buttons",
-  parameters: {
-    docs: {
-      description: {
-        story: "",
-      },
-    },
-  },
-};
