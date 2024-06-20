@@ -20,6 +20,7 @@ const ButtonStyles: any = {
   controlHeightSM: 24,
   controlHeightLG: 40,
   paddingBlock: 2,
+  textHoverBg: "#F5F7F8",
   //primaryShadow: "none",
 };
 

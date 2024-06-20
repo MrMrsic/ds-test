@@ -12,6 +12,9 @@ let cx = classNames.bind(styles);
 const TooltipStyles: any = {
   colorBgSpotlight: lightTheme?.tooltipBg,
   borderRadius: lightTheme?.borderRadius,
+  paddingSM: 8,
+  paddingXS: 8,
+  fontSize: 12,
 };
 
 export const Tooltip = (props: AntTooltipProps) => {
