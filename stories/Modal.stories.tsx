@@ -58,6 +58,8 @@ export const Sizes = {
               <OkBtn />
             </>
           )}
+          okButtonProps={{ size: "large" }}
+          cancelButtonProps={{ size: "large" }}
         >
           <p>Some contents...</p>
           <p>Some contents...</p>

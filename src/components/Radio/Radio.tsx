@@ -27,7 +27,7 @@ export const Radio = (props: RadioProps) => {
   const classes: any = cx(props?.className, {
     iki_radio_button: props?.isButton,
     iki_radio: !props?.isButton,
-    is_checked: props?.checked,
+    is_checked: props?.isButton && props?.checked,
   });
 
   return (

@@ -12,8 +12,8 @@ let cx = classNames.bind(styles);
 const TooltipStyles: any = {
   colorBgSpotlight: lightTheme?.tooltipBg,
   borderRadius: lightTheme?.borderRadius,
-  paddingSM: 12,
-  paddingXS: 12,
+  paddingSM: 16,
+  paddingXS: 16,
   fontSize: 13,
   lineHeight: "18px",
 };

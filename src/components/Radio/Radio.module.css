@@ -46,6 +46,7 @@
   background-color: var(--radioActiveButtonBg) !important;
 }*/
 
-.iki_radio_button.is_checked:last-child::before {
+.iki_radio_button.is_checked::before,
+.iki_radio:global(.ant-radio-button-wrapper-checked) {
   background: none !important;
 }
