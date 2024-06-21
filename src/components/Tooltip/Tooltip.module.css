@@ -2,4 +2,5 @@
 
 .iki_tooltip {
   font-family: var(--main-font-family);
+  padding: 8px !important;
 }

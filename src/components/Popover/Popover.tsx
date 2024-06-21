@@ -1,26 +1,20 @@
 import React from "react";
 import {
-  Tooltip as AntTooltip,
-  TooltipProps as AntTooltipProps,
+  Popover as AntPopover,
+  PopoverProps as AntPopoverProps,
   ConfigProvider,
 } from "antd";
 import lightTheme from "../../styles/lightAntdTheme";
-import styles from "./Tooltip.module.css";
+import styles from "./Popover.module.css";
 import classNames from "classnames/bind";
 let cx = classNames.bind(styles);
 
-const TooltipStyles: any = {
-  colorBgSpotlight: lightTheme?.tooltipBg,
-  borderRadius: lightTheme?.borderRadius,
-  paddingSM: 8,
-  paddingXS: 8,
-  fontSize: 13,
-};
+const PopoverStyles: any = {};
 
-export const Tooltip = (props: AntTooltipProps) => {
+export const Popover = (props: AntPopoverProps) => {
   const classes: any = props?.className
-    ? `${styles.iki_tooltip} ${props?.className}`
-    : styles.iki_tooltip;
+    ? `${styles.iki_popover} ${props?.className}`
+    : styles.iki_popover;
   return (
     <ConfigProvider
       wave={{ disabled: true }}
@@ -30,12 +24,12 @@ export const Tooltip = (props: AntTooltipProps) => {
           fontFamily: "Inter, sans-serif",
           ...lightTheme,
         },
-        components: { Tooltip: TooltipStyles },
+        components: { Popover: PopoverStyles },
       }}
     >
-      <AntTooltip {...props} className={classes}>
+      <AntPopover {...props} className={classes}>
         {props?.children}
-      </AntTooltip>
+      </AntPopover>
     </ConfigProvider>
   );
 };
