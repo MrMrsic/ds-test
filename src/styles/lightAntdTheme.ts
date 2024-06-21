@@ -7,6 +7,8 @@ const lightTheme: any = {
   borderRadius: 4,
   colorTextBase: "#10181b",
   tooltipBg: "#414D5A",
+  radioActiveButtonBg: "#e8e6ec",
+  radioButtonBorderColor: "#e8e6ec",
 };
 
 export default lightTheme;

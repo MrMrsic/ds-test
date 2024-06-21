@@ -4,4 +4,6 @@
   --errorText: #ec4a41; /* #a61a1a */
   --hoverBorderColor: #10181b;
   --mainTextColor: #10181b;
+  --radioActiveButtonBg: #e8e6ec;
+  --radioButtonBorderColor: #e8e6ec;
 }

@@ -13,7 +13,15 @@ interface RadioProps extends AntRadioProps {
   isButton?: boolean;
 }
 
-const RadioStyles: any = {};
+const RadioStyles: any = {
+  colorPrimary: lightTheme?.colorTextBase,
+  colorText: lightTheme?.colorTextBase,
+  buttonSolidCheckedBg: lightTheme?.radioActiveButtonBg,
+  buttonSolidCheckedHoverBg: lightTheme?.radioActiveButtonBg,
+  buttonSolidCheckedActiveBg: lightTheme?.radioActiveButtonBg,
+  buttonSolidCheckedColor: lightTheme?.colorTextBase,
+  //colorBorder: lightTheme?.colorTextBase,
+};
 
 export const Radio = (props: RadioProps) => {
   const classes: any = cx(props?.className, {

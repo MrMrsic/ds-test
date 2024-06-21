@@ -27,7 +27,13 @@ export const Overview = {
     return (
       <>
         <Tooltip
-          title="prompt text"
+          title={
+            <div>
+              <div>Lorem ipsum sdfsjnd fdsf jnčsdf </div>
+              <div>asdfjvsdjfvnsčdfjvnsd</div>
+              <div>dfbisdf 087hsd08f hdfh df h</div>
+            </div>
+          }
           placement="topLeft"
           autoAdjustOverflow={true}
         >

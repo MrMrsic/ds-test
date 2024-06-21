@@ -1,26 +1,31 @@
 @import "../../styles/cssGlobalVars.css";
 
 .iki_radio {
-  color: var(--mainTextColor) !important;
+  /*color: var(--mainTextColor) !important;*/
 }
 
 .iki_radio :global(.ant-radio-inner) {
-  /*border: 1px solid #e3e9ef;*/
 }
 
-.iki_radio:hover :global(.ant-radio .ant-radio-inner) {
+/*.iki_radio:hover :global(.ant-radio .ant-radio-inner) {
   border-color: var(--mainTextColor) !important;
 }
 
 .iki_radio :global(.ant-radio.ant-radio-checked .ant-radio-inner) {
   background-color: var(--mainTextColor) !important;
   border-color: var(--mainTextColor) !important;
-}
+}*/
 
 .iki_radio_group {
 }
 
+/*.iki_radio_group:hover .iki_radio_button {
+  border-color: var(--mainTextColor);
+}*/
+
 .iki_radio_button {
+  /*border-color: var(--radioButtonBorderColor);*/
+
   :global(.anticon) {
     height: 100%;
   }
@@ -29,10 +34,18 @@
     width: auto;
   }
 }
-.iki_radio_button.is_checked {
+/*.iki_radio_button.is_checked {
   fill: #fff;
 
   :global(.anticon svg) {
     fill: #fff;
   }
+}*/
+
+/*.iki_radio_button.is_checked {
+  background-color: var(--radioActiveButtonBg) !important;
+}*/
+
+.iki_radio_button.is_checked:last-child::before {
+  background: none !important;
 }
