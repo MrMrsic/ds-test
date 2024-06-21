@@ -29,3 +29,10 @@
     width: auto;
   }
 }
+.iki_radio_button.is_checked {
+  fill: #fff;
+
+  :global(.anticon svg) {
+    fill: #fff;
+  }
+}

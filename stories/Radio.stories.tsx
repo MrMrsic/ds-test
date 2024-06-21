@@ -82,14 +82,14 @@ export const GroupButtons = {
           <Space.Compact>
             <RadioGroup
               onChange={onChange}
-              defaultValue={"London"}
+              //defaultValue={"London"}
               buttonStyle="solid"
             >
               <Radio value={"Berlin"} isButton>
                 <BankFilled style={{ marginRight: "6px" }} />
                 Berlin
               </Radio>
-              <Radio value={"London"} isButton>
+              <Radio value={"London"} isButton checked>
                 <HomeFilled style={{ marginRight: "6px" }} />
                 London
               </Radio>

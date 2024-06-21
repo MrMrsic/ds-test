@@ -16,17 +16,12 @@ interface RadioProps extends AntRadioProps {
 const RadioStyles: any = {};
 
 export const Radio = (props: RadioProps) => {
-  let classes: any = "";
+  const classes: any = cx(props?.className, {
+    iki_radio_button: props?.isButton,
+    iki_radio: !props?.isButton,
+    is_checked: props?.checked,
+  });
 
-  if (props?.isButton) {
-    classes = props?.className
-      ? `${styles.iki_radio_button} ${props?.className}`
-      : styles.iki_radio_button;
-  } else {
-    classes = props?.className
-      ? `${styles.iki_radio} ${props?.className}`
-      : styles.iki_radio;
-  }
   return (
     <ConfigProvider
       wave={{ disabled: true }}
