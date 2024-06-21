@@ -21,4 +21,11 @@
 }
 
 .iki_radio_button {
+  :global(.anticon) {
+    height: 100%;
+  }
+  :global(.anticon svg) {
+    height: 50%;
+    width: auto;
+  }
 }
