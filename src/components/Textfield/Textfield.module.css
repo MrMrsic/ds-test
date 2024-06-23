@@ -35,3 +35,9 @@
 .helperText_holder .helperText.is_error {
   color: var(--errorText);
 }
+
+.iki_textfield :global(.ant-input-prefix svg) {
+  width: 18px;
+  height: auto;
+  fill: #8898a9;
+}

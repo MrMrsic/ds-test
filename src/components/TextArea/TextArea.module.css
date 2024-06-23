@@ -35,3 +35,19 @@
 .helperText_holder .helperText.is_error {
   color: var(--errorText);
 }
+
+.iki_textarea {
+  border-radius: 4px;
+  border: 1px solid #e3e9ef;
+  box-shadow: 0 0 0 transparent;
+  color: var(--mainTextColor);
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  font-weight: 400;
+}
+.iki_textarea:hover {
+  border: 1px solid #10181b;
+}
+.iki_textarea:focus {
+  border: 1px solid #7822ff;
+}
