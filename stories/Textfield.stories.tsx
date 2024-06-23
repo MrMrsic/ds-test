@@ -2,14 +2,12 @@ import { fn } from "@storybook/test";
 import { Meta, StoryObj } from "@storybook/react";
 //import { SearchOutlined } from "@ant-design/icons";
 import { Space, Input } from "antd";
-import { Textfield } from "../src/components/Textfield";
+import { TextField } from "../src/components/TextField";
 import React from "react";
 
-const { TextArea } = Input;
-
-const meta: Meta<typeof Textfield> = {
-  title: "Inputs/Textfield",
-  component: Textfield,
+const meta: Meta<typeof TextField> = {
+  title: "Inputs/TextField",
+  component: TextField,
   tags: ["autodocs"],
   parameters: {
     docs: {
@@ -22,7 +20,7 @@ const meta: Meta<typeof Textfield> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Textfield>;
+type Story = StoryObj<typeof TextField>;
 
 export const Overview: Story = {
   args: {
@@ -39,21 +37,21 @@ export const Sizes = {
     <>
       <Space direction="vertical" size="middle">
         <Space.Compact>
-          <Textfield
+          <TextField
             size="small"
             label="Small input"
             placeholder="Enter text..."
           />
         </Space.Compact>
         <Space.Compact>
-          <Textfield
+          <TextField
             size="middle"
             label="Med input"
             placeholder="Enter text..."
           />
         </Space.Compact>
         <Space.Compact>
-          <Textfield
+          <TextField
             size="large"
             label="Large input"
             placeholder="Enter text..."
@@ -78,7 +76,7 @@ export const WithIcons = {
   render: () => (
     <>
       <div>
-        <Textfield
+        <TextField
           label="With prefix icon"
           placeholder="Enter text..."
           prefix={
@@ -100,7 +98,7 @@ export const WithIcons = {
         <div>
           <br />
         </div>
-        <Textfield
+        <TextField
           label="With sufix icon"
           placeholder="Enter text..."
           suffix={
@@ -140,7 +138,7 @@ export const States = {
   render: () => (
     <>
       <div>
-        <Textfield
+        <TextField
           size="middle"
           label="Warning input"
           placeholder="Enter text..."
@@ -149,7 +147,7 @@ export const States = {
         <div>
           <br />
         </div>
-        <Textfield
+        <TextField
           size="middle"
           label="Error input"
           placeholder="Enter text..."
@@ -174,7 +172,7 @@ export const Validation = {
   render: () => (
     <>
       <div>
-        <Textfield
+        <TextField
           size="middle"
           label="Error input"
           placeholder="Enter text..."
@@ -191,32 +189,6 @@ export const Validation = {
       description: {
         story:
           "Use validation to give feedback to the user for a case where he has provided an invalid input. The validation error should appear when the user is done typing and getting out of the input’s focus.",
-      },
-    },
-  },
-};
-
-export const TextAreaStory = {
-  render: () => (
-    <>
-      <div>
-        <TextArea placeholder="Enter text..." rows={8} />
-        <div>
-          <br />
-        </div>
-        <TextArea
-          placeholder="Enter text..."
-          autoSize={{ minRows: 2, maxRows: 6 }}
-        />
-      </div>
-    </>
-  ),
-
-  name: "Text area",
-  parameters: {
-    docs: {
-      description: {
-        story: "For multi-line input.",
       },
     },
   },

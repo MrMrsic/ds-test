@@ -31,6 +31,7 @@ export const Sizes = {
     };
 
     const handleOk = () => {
+      console.log("handleOk!");
       setIsModalOpen(false);
     };
 

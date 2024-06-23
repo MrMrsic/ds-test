@@ -4,7 +4,9 @@ import {
   InputProps as AntInputProps,
   ConfigProvider,
 } from "antd";
-import styles from "./TextField.module.css";
+//import CompoundedComponent from "antd/lib/input/TextArea";
+import { default as AntTextArea } from "antd/lib/input/TextArea";
+import styles from "./TextArea.module.css";
 import classNames from "classnames/bind";
 import lightTheme from "../../styles/lightAntdTheme";
 let cx = classNames.bind(styles);
@@ -15,6 +17,8 @@ interface TextfieldProps extends AntInputProps {
   helperText?: string;
 }
 
+//const { TextArea }: TextfieldProps | any = AntInput;
+
 const InputStyles: any = {
   colorBorder: "#E3E9EF",
   hoverBorderColor: "#10181B",
@@ -24,12 +28,12 @@ const InputStyles: any = {
   colorTextPlaceholder: "#637282",
 };
 
-export const TextField = (props: TextfieldProps) => {
+export const TextArea = (props: TextfieldProps | any) => {
   const classes: any = props?.className
-    ? `${styles.iki_textfield} ${props?.className}`
-    : styles.iki_textfield;
+    ? `${styles.iki_textarea} ${props?.className}`
+    : styles.iki_textarea;
   return (
-    <div className={styles.iki_textfield_wrapper}>
+    <div className={styles.iki_textarea_wrapper}>
       {props?.label && (
         <div className={styles.label_holder}>
           <span className={cx(styles.label, { is_required: props?.required })}>
@@ -48,7 +52,7 @@ export const TextField = (props: TextfieldProps) => {
           components: { Input: InputStyles },
         }}
       >
-        <AntInput {...props} className={classes} />
+        <AntTextArea {...props} className={classes} />
       </ConfigProvider>
       {props?.helperText && (
         <div className={styles.helperText_holder}>

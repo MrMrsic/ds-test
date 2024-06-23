@@ -6,5 +6,5 @@ export * from "./components/Popover";
 export * from "./components/Radio";
 export * from "./components/Select";
 export * from "./components/Space";
-export * from "./components/Textfield";
+export * from "./components/TextField";
 export * from "./components/Tooltip";
