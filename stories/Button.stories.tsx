@@ -62,6 +62,9 @@ export const Sizes = {
       <Button size="small">Small</Button>
       <Button>Medium</Button>
       <Button size="large">Large</Button>
+      <Button size="large" type="primary">
+        Large
+      </Button>
     </div>
   ),
 

@@ -21,6 +21,17 @@
     overflow-y: auto;
   }
 
+  :global(.ant-modal-body::-webkit-scrollbar) {
+    width: 6px;
+  }
+  :global(.ant-modal-body::-webkit-scrollbar-track) {
+    background: rgba(230, 230, 245, 0.32) !important;
+  }
+  :global(.ant-modal-body::-webkit-scrollbar-thumb) {
+    background-color: rgba(220, 220, 235, 0.8) !important;
+    border-radius: 6px !important;
+  }
+
   :global(.modal-title-holder .modal-title) {
     font-size: 29px;
     font-weight: 700;

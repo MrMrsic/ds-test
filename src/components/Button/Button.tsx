@@ -21,6 +21,9 @@ const ButtonStyles: any = {
   controlHeightLG: 40,
   paddingBlock: 2,
   textHoverBg: "#F5F7F8",
+  contentFontSize: 14,
+  contentFontSizeSM: 12,
+  contentFontSizeLG: 14,
   //primaryShadow: "none",
 };
 

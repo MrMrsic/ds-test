@@ -58,7 +58,7 @@
 }*/
 
 .iki_radio_button.is_checked::before,
-.iki_radio:global(.ant-radio-button-wrapper-checked)::before,
-.iki_radio:global(.ant-radio-button-wrapper-checked) {
+.iki_radio_button:global(.ant-radio-button-wrapper-checked)::before,
+.iki_radio_button:global(.ant-radio-button-wrapper-checked) {
   background: none !important;
 }

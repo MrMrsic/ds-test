@@ -25,12 +25,12 @@
 }
 
 .helperText_holder {
-  margin-top: 4px;
+  margin-top: 2px;
 }
 .helperText_holder .helperText {
   color: #676879;
   font-family: var(--main-font-family);
-  font-size: 14px;
+  font-size: 13px;
 }
 .helperText_holder .helperText.is_error {
   color: var(--errorText);
