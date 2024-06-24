@@ -15,6 +15,10 @@
   :global(.ant-modal-body) {
     margin-top: 32px;
     margin-bottom: 40px;
+    max-height: calc(100vh - 50vh);
+    padding-right: 6px;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   :global(.modal-title-holder .modal-title) {

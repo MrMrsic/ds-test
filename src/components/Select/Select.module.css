@@ -6,6 +6,7 @@
 }
 .iki_select:hover :global(.ant-select-selector) {
   border-color: var(--hoverBorderColor) !important;
+  box-shadow: 0 0 0 transparent !important;
 }
 
 .label_holder {
