@@ -17,6 +17,18 @@
 }*/
 
 .iki_radio_group {
+  position: relative;
+}
+.iki_radio_group:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--mainTextColor);
+  border-radius: 4px;
+  z-index: 2;
 }
 
 /*.iki_radio_group:hover .iki_radio_button {
