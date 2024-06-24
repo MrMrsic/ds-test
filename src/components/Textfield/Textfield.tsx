@@ -16,7 +16,7 @@ interface TextfieldProps extends AntInputProps {
 }
 
 const InputStyles: any = {
-  colorBorder: "#E3E9EF",
+  colorBorder: "#d9d9d9", // E3E9EF
   hoverBorderColor: "#10181B",
   activeShadow: "0 0 0 0 transparent",
   borderRadius: "4px",

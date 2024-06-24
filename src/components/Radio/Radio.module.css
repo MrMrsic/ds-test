@@ -20,7 +20,7 @@
 }
 
 /*.iki_radio_group:hover .iki_radio_button {
-  border-color: var(--mainTextColor);
+  border: 1px solid var(--mainTextColor);
 }*/
 
 .iki_radio_button {
@@ -47,6 +47,7 @@
 }*/
 
 .iki_radio_button.is_checked::before,
+.iki_radio:global(.ant-radio-button-wrapper-checked)::before,
 .iki_radio:global(.ant-radio-button-wrapper-checked) {
   background: none !important;
 }

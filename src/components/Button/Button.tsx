@@ -10,7 +10,7 @@ const ButtonStyles: any = {
   //colorPrimaryHover: "#10181B",
   //colorPrimaryActive: "#10181B",
   //colorPrimaryBorder: "#7822ff",
-  defaultBorderColor: "#E3E9EF",
+  defaultBorderColor: "#d9d9d9",
   defaultHoverBorderColor: "#10181B",
   defaultHoverColor: "#10181B",
   borderRadius: 4,
