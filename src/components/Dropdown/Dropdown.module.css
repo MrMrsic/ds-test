@@ -1,0 +1,5 @@
+@import "../../styles/cssGlobalVars.css";
+
+.iki_dropdown {
+  font-family: var(--main-font-family);
+}
