@@ -70,6 +70,37 @@ export const Group = {
   },
 };
 
+export const GroupWithLabel = {
+  render: () => {
+    const [value, setValue] = useState(1);
+
+    const onChange = (e: any) => {
+      setValue(e.target.value);
+    };
+    return (
+      <>
+        <RadioGroup onChange={onChange} value={value} label="Type" withBorder>
+          <Space direction="vertical">
+            <Radio value={1}>A</Radio>
+            <Radio value={2}>B</Radio>
+            <Radio value={3}>C</Radio>
+            <Radio value={4}>D</Radio>
+          </Space>
+        </RadioGroup>
+      </>
+    );
+  },
+
+  name: "Group with label",
+  parameters: {
+    docs: {
+      description: {
+        story: "",
+      },
+    },
+  },
+};
+
 export const GroupButtons = {
   render: () => {
     const [value, setValue] = useState(1);
@@ -83,7 +114,7 @@ export const GroupButtons = {
           <Space.Compact>
             <RadioGroup
               onChange={onChange}
-              //defaultValue={"London"}
+              defaultValue={"London"}
               buttonStyle="solid"
             >
               <Radio value={"Berlin"} isButton>
@@ -159,7 +190,12 @@ export const GroupIconButtons = {
       <>
         <Space direction="vertical" size="middle">
           <Space.Compact>
-            <RadioGroup onChange={onChange} value={value} buttonStyle="solid">
+            <RadioGroup
+              onChange={onChange}
+              defaultValue={2}
+              value={value}
+              buttonStyle="solid"
+            >
               <Radio value={1} isButton>
                 <Icon
                   component={GridIcon}

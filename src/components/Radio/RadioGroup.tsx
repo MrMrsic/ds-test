@@ -9,7 +9,11 @@ import styles from "./Radio.module.css";
 import classNames from "classnames/bind";
 let cx = classNames.bind(styles);
 
-interface RadioGroupProps extends AntRadioGroupProps {}
+interface RadioGroupProps extends AntRadioGroupProps {
+  label?: string;
+  required?: boolean;
+  withBorder?: boolean;
+}
 
 const RadioGroupStyles: any = {
   buttonSolidCheckedBg: lightTheme?.colorTextBase,
@@ -41,7 +45,24 @@ export const RadioGroup = (props: RadioGroupProps) => {
       }}
     >
       <AntRadio.Group {...props} className={classes}>
-        {props?.children}
+        <>
+          {props?.label && (
+            <div className={styles.label_holder}>
+              <span
+                className={cx(styles.label, { is_required: props?.required })}
+              >
+                {props?.label}
+              </span>
+            </div>
+          )}
+          <div
+            className={cx(styles.radios_holder, {
+              bordered: props?.withBorder,
+            })}
+          >
+            {props?.children}
+          </div>
+        </>
       </AntRadio.Group>
     </ConfigProvider>
   );

@@ -4,6 +4,24 @@
   /*color: var(--mainTextColor) !important;*/
 }
 
+.label_holder {
+  margin-bottom: 4px;
+}
+.label_holder .label {
+  position: relative;
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.label_holder .label.is_required::after {
+  content: "*";
+}
+.label_holder .label_required {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
 .iki_radio :global(.ant-radio-inner) {
 }
 
@@ -16,7 +34,7 @@
   border-color: var(--mainTextColor) !important;
 }*/
 
-.iki_radio_group {
+/*.iki_radio_group {
   position: relative;
 }
 .iki_radio_group:hover::before {
@@ -28,7 +46,7 @@
   height: calc(100% + 2px);
   border: 1px solid var(--mainTextColor);
   border-radius: 4px;
-}
+}*/
 
 /*.iki_radio_group:hover .iki_radio_button {
   border: 1px solid var(--mainTextColor);
@@ -58,7 +76,14 @@
 }*/
 
 .iki_radio_button.is_checked::before,
-.iki_radio_button:global(.ant-radio-button-wrapper-checked)::before,
-.iki_radio_button:global(.ant-radio-button-wrapper-checked) {
+.iki_radio_button:global(.ant-radio-button-wrapper-checked)::before {
   background: none !important;
+}
+
+.radios_holder {
+}
+.radios_holder.bordered {
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
 }
