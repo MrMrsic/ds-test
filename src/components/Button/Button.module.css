@@ -7,12 +7,22 @@
   display: inline-flex;
 }
 
-.iki_btn:global(.ant-btn-icon:not(.ant-btn-square) .ant-btn-icon svg) {
+/*.iki_btn:global(.ant-btn-icon:not(.ant-btn-icon-only) svg) {
+  height: 14px;
+  width: auto;
+}*/
+.iki_btn:global(.ant-btn-icon svg) {
   height: 14px;
   width: auto;
 }
-.iki_btn:global(.ant-btn-sm .ant-btn-icon svg) {
+.iki_btn:global(.ant-btn-default .ant-btn-icon svg) {
+  height: 14px;
+}
+.iki_btn:global(.ant-btn-default.ant-btn-sm .ant-btn-icon svg) {
   height: 11px;
+}
+.iki_btn:global(.ant-btn-lg .ant-btn-icon svg) {
+  height: 17px;
 }
 
 .iki_btn:global(.ant-btn-default .ant-btn-icon svg) {
