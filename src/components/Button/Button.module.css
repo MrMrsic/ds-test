@@ -7,7 +7,7 @@
   display: inline-flex;
 }
 
-.iki_btn :global(.ant-btn-icon svg) {
+.iki_btn:global(.ant-btn-icon:not(.ant-btn-square) .ant-btn-icon svg) {
   height: 14px;
   width: auto;
 }
@@ -21,6 +21,6 @@
 .iki_btn:global(.ant-btn-primary .ant-btn-icon svg) {
   fill: #fff;
 }
-.iki_btn:disabled {
+.iki_btn:disabled :global(.ant-btn-icon svg) {
   fill: rgba(0, 0, 0, 0.16) !important;
 }
