@@ -13,13 +13,20 @@
 
 .iki_toggle {
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.45);
+  /*background-color: rgba(0, 0, 0, 0.45);*/
+  background-color: #e3e9ef;
 }
 .iki_toggle :global(.ant-switch-handle::before) {
   border-radius: 4px;
 }
 .iki_toggle:global(.ant-switch-checked) {
   background-color: #414d5a;
+}
+.iki_toggle :global(.ant-switch-inner-unchecked) {
+  color: #414d5a !important;
+}
+.iki_toggle:hover:global:not(.ant-switch-checked) {
+  background-color: #d6dde4;
 }
 
 .label {
