@@ -104,6 +104,9 @@ export const Sizes = {
             Button
           </Button>
           <Button icon={<GridIcon />}>Button</Button>
+          <Button type="primary" icon={<GridIcon />}>
+            Button
+          </Button>
           <Button type="primary" size="large" icon={<GridIcon />}>
             Button
           </Button>
