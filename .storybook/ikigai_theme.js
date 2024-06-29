@@ -1,4 +1,5 @@
 import { create } from "@storybook/theming/create";
+import logo from "./ikigai_logo_lockup_gradient_transparent_xlarge.png";
 
 export default create({
   base: "light",
@@ -8,7 +9,8 @@ export default create({
 
   brandTitle: "Ikigai Labs",
   brandUrl: "https://ikigailabs.io",
-  brandImage: "./ikigai_logo_lockup_gradient_transparent_xlarge.png",
+  //brandImage: "./ikigai_logo_lockup_gradient_transparent_xlarge.png",
+  brandImage: logo,
   brandTarget: "_self",
 
   //
