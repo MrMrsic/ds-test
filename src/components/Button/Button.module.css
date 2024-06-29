@@ -11,12 +11,13 @@
   height: 14px;
   width: auto;
 }*/
-.iki_btn:global(.ant-btn-icon svg) {
-  height: 14px;
-  width: auto;
-}
+/*
+  max-width: 16px;
+  justify-content: center;
+*/
 .iki_btn :global(.ant-btn-icon svg) {
   height: 14px;
+  width: auto;
 }
 .iki_btn:global(.ant-btn-default.ant-btn-sm .ant-btn-icon svg) {
   height: 11px;

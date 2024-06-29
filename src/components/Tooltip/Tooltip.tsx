@@ -14,7 +14,7 @@ const TooltipStyles: any = {
   borderRadius: lightTheme?.borderRadius,
   paddingSM: 16,
   paddingXS: 16,
-  fontSize: 13,
+  fontSize: 12,
   lineHeight: "18px",
 };
 

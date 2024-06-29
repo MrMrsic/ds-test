@@ -15,7 +15,7 @@
   :global(.ant-modal-body) {
     margin-top: 32px;
     margin-bottom: 40px;
-    max-height: calc(100vh - 50vh);
+    max-height: calc(100vh - 60vh);
     padding-right: 6px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -33,7 +33,7 @@
   }
 
   :global(.modal-title-holder .modal-title) {
-    font-size: 29px;
+    font-size: 26px;
     font-weight: 700;
   }
   :global(.modal-title-holder .modal-subtitle) {
