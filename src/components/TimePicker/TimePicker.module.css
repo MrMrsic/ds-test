@@ -1,6 +1,6 @@
 @import "../../styles/cssGlobalVars.css";
 
-.iki_textfield_wrapper {
+.iki_timepicker_wrapper {
 }
 
 .label_holder {
@@ -21,7 +21,8 @@
   margin-bottom: 4px;
 }
 
-.iki_textfield {
+.iki_timepicker {
+  min-height: 32px;
 }
 
 .helperText_holder {
@@ -36,16 +37,16 @@
   color: var(--errorText);
 }
 
-.iki_textfield :global(.ant-input-prefix svg) {
+.iki_timepicker :global(.ant-input-prefix svg) {
   width: 18px;
   height: auto;
   fill: #8898a9;
 }
 
-.iki_textfield :global(.ant-input-suffix) {
+.iki_timepicker :global(.ant-input-suffix) {
   display: inline-block;
 }
-.iki_textfield :global(.ant-input-show-count-suffix) {
+.iki_timepicker :global(.ant-input-show-count-suffix) {
   font-size: 12px;
   letter-spacing: -0.8px;
 }

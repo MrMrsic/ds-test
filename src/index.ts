@@ -1,6 +1,8 @@
 export * from "./components/Button";
 export * from "./components/Alert";
+export * from "./components/AutoComplete";
 export * from "./components/Checkbox";
+export * from "./components/DatePicker";
 export * from "./components/Dropdown";
 export * from "./components/Icon";
 export * from "./components/Modal";
@@ -10,6 +12,8 @@ export * from "./components/Select";
 export * from "./components/Space";
 export * from "./components/TextArea";
 export * from "./components/TextField";
+export * from "./components/TextField/InputNumber";
+export * from "./components/TimePicker";
 export * from "./components/Toggle";
 export * from "./components/Tooltip";
 
