@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Toggle } from "../src/components/Toggle";
-import { Button } from "../src/components/Button";
+import { Toggle, Button } from "../src/components";
 
 import React, { Children, useState } from "react";
 import { Space } from "antd";

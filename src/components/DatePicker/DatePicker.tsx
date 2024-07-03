@@ -64,3 +64,5 @@ export const DatePicker = (props: DatePickerProps) => {
     </div>
   );
 };
+
+export default DatePicker;

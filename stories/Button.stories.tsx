@@ -2,7 +2,7 @@ import { fn } from "@storybook/test";
 import { Meta, StoryObj } from "@storybook/react";
 import { SearchOutlined } from "@ant-design/icons";
 import { ButtonProps } from "antd";
-import { Button } from "../src/components/Button";
+import { Button } from "../src/components";
 import { Markdown, Description } from "@storybook/blocks";
 
 import React from "react";

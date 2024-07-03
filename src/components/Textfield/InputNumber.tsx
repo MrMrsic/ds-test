@@ -64,3 +64,5 @@ export const InputNumber = (props: InputNumberProps) => {
     </div>
   );
 };
+
+export default InputNumber;

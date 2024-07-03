@@ -35,3 +35,5 @@ export const Alert = (props: AntAlertProps) => {
     </ConfigProvider>
   );
 };
+
+export default Alert;

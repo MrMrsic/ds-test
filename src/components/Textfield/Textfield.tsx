@@ -13,6 +13,8 @@ interface TextfieldProps extends AntInputProps {
   label?: string;
   required?: boolean;
   helperText?: string;
+  fullwidth?: boolean;
+  badgeIcon?: any;
 }
 
 const InputStyles: any = {
@@ -29,7 +31,11 @@ export const TextField = (props: TextfieldProps) => {
     ? `${styles.iki_textfield} ${props?.className}`
     : styles.iki_textfield;
   return (
-    <div className={styles.iki_textfield_wrapper}>
+    <div
+      className={cx(styles.iki_textfield_wrapper, {
+        fullwidth: props?.fullwidth,
+      })}
+    >
       {props?.label && (
         <div className={styles.label_holder}>
           <span className={cx(styles.label, { is_required: props?.required })}>
@@ -61,6 +67,17 @@ export const TextField = (props: TextfieldProps) => {
           </span>
         </div>
       )}
+      {props?.badgeIcon && (
+        <span
+          className={cx(styles.badgeIcon_holder, {
+            move_up: props?.helperText,
+          })}
+        >
+          {props?.badgeIcon}
+        </span>
+      )}
     </div>
   );
 };
+
+export default TextField;

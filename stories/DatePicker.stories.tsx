@@ -2,7 +2,7 @@ import { fn } from "@storybook/test";
 import { Meta, StoryObj } from "@storybook/react";
 //import { SearchOutlined } from "@ant-design/icons";
 import { Space } from "antd";
-import { DatePicker } from "../src/components/DatePicker";
+import { DatePicker } from "../src/components";
 import React from "react";
 
 const meta: Meta<typeof DatePicker> = {

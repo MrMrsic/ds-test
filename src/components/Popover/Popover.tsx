@@ -33,3 +33,5 @@ export const Popover = (props: AntPopoverProps) => {
     </ConfigProvider>
   );
 };
+
+export default Popover;

@@ -66,3 +66,5 @@ export const Toggle = (props: ToggleProps) => {
     </div>
   );
 };
+
+export default Toggle;

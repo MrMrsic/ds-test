@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Dropdown } from "../src/components/Dropdown";
-import MenuProps from "../src/types/MenuProps";
-import { Button } from "../src/components/Button";
+import { Dropdown, Button } from "../src/components";
+import { MenuProps } from "../src/types";
 
 import React, { Children, useState } from "react";
 import { Space } from "antd";

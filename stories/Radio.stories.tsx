@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Radio, RadioGroup } from "../src/components/Radio";
-import { Icon } from "../src/components/Icon";
+import { Radio, RadioGroup, Icon } from "../src/components";
 import { HomeFilled, BankFilled } from "@ant-design/icons";
 
 import React, { useState } from "react";

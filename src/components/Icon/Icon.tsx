@@ -12,3 +12,5 @@ export const Icon = (props: CustomIconComponentProps) => {
     : styles.iki_icon;
   return <AntIcon {...props} className={classes} />;
 };
+
+export default Icon;

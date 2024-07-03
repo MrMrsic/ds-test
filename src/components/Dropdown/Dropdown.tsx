@@ -33,3 +33,5 @@ export const Dropdown = (props: AntDropdownProps) => {
     </ConfigProvider>
   );
 };
+
+export default Dropdown;

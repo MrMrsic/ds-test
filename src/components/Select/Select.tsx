@@ -81,3 +81,5 @@ export const Select = (props: SelectProps) => {
     </div>
   );
 };
+
+export default Select;

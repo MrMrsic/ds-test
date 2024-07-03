@@ -49,3 +49,5 @@ export const Button = (props: ButtonProps) => {
     </ConfigProvider>
   );
 };
+
+export default Button;

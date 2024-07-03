@@ -68,3 +68,5 @@ export const AutoComplete = (props: AutoCompleteProps) => {
     </div>
   );
 };
+
+export default AutoComplete;

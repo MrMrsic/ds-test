@@ -2,7 +2,7 @@ import { fn } from "@storybook/test";
 import { Meta, StoryObj } from "@storybook/react";
 //import { SearchOutlined } from "@ant-design/icons";
 import { Space, Input } from "antd";
-import { TextField } from "../src/components/TextField";
+import TextField from "../src/components/TextField/TextField";
 import React from "react";
 
 const meta: Meta<typeof TextField> = {
@@ -119,6 +119,31 @@ export const WithIcons = {
             </svg>
           }
           style={{ width: "200px" }}
+        />
+        <div>
+          <br />
+        </div>
+        <TextField
+          label="With badge icon"
+          placeholder="Enter text..."
+          style={{ width: "200px" }}
+          badgeIcon={
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{
+                fill: "black",
+                color: "black",
+                width: "18px",
+                height: "auto",
+              }}
+            >
+              <path d="M14.5502 5.50514L12.4952 3.45014C12.227 3.19821 11.8756 3.05366 11.5077 3.04398C11.1399 3.0343 10.7813 3.16016 10.5002 3.39764L3.75022 10.1476C3.5078 10.3921 3.35685 10.7125 3.32272 11.0551L3.00022 14.1826C2.99012 14.2925 3.00437 14.4032 3.04197 14.5069C3.07956 14.6106 3.13957 14.7048 3.21772 14.7826C3.2878 14.8521 3.37091 14.9071 3.46229 14.9445C3.55367 14.9818 3.65152 15.0007 3.75022 15.0001H3.81772L6.94522 14.7151C7.28782 14.681 7.60825 14.5301 7.85272 14.2876L14.6027 7.53764C14.8647 7.26086 15.0063 6.89152 14.9965 6.51054C14.9866 6.12956 14.8261 5.76802 14.5502 5.50514V5.50514ZM6.81022 13.2151L4.56022 13.4251L4.76272 11.1751L9.00022 6.99014L11.0252 9.01514L6.81022 13.2151ZM12.0002 8.01014L9.99022 6.00014L11.4527 4.50014L13.5002 6.54764L12.0002 8.01014Z"></path>
+            </svg>
+          }
         />
       </div>
     </>

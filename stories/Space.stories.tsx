@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Space } from "../src/components/Space";
+import { Space } from "../src/components";
 
 import React, { Children, useState } from "react";
 

@@ -1,6 +1,12 @@
 @import "../../styles/cssGlobalVars.css";
 
 .iki_textfield_wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+.iki_textfield_wrapper.fullwidth {
+  width: 100%;
 }
 
 .label_holder {
@@ -48,4 +54,21 @@
 .iki_textfield :global(.ant-input-show-count-suffix) {
   font-size: 12px;
   letter-spacing: -0.8px;
+}
+
+.badgeIcon_holder {
+  position: absolute;
+  right: -8px;
+  bottom: -11px;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  padding: 2px;
+  border: 1px solid #d9d9d9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }

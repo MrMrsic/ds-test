@@ -52,3 +52,5 @@ export const Modal = (props: ModalProps) => {
     </ConfigProvider>
   );
 };
+
+export default Modal;

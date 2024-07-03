@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Alert } from "../src/components/Alert";
+import { Alert } from "../src/components";
 import { Button } from "../src/components/Button";
 
 import React, { Children, useState } from "react";

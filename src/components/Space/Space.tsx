@@ -33,3 +33,5 @@ export const Space = (props: AntSpaceProps) => {
     </ConfigProvider>
   );
 };
+
+export default Space;

@@ -2,7 +2,7 @@ import { fn } from "@storybook/test";
 import { Meta, StoryObj } from "@storybook/react";
 //import { SearchOutlined } from "@ant-design/icons";
 import { Space } from "antd";
-import { TimePicker } from "../src/components/TimePicker";
+import { TimePicker } from "../src/components";
 import React from "react";
 
 const meta: Meta<typeof TimePicker> = {

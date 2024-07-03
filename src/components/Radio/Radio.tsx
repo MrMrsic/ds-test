@@ -50,3 +50,5 @@ export const Radio = (props: RadioProps) => {
     </ConfigProvider>
   );
 };
+
+export default Radio;

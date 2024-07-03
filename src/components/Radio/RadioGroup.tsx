@@ -67,3 +67,5 @@ export const RadioGroup = (props: RadioGroupProps) => {
     </ConfigProvider>
   );
 };
+
+export default RadioGroup;

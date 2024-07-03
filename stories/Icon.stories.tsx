@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Icon } from "../src/components/Icon";
+import { Icon } from "../src/components";
 
 import React from "react";
 import { Space } from "antd";

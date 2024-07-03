@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Modal } from "../src/components/Modal";
-import { Button } from "../src/components/Button";
+import { Modal } from "../src/components/Modal/Modal";
+import { Button } from "../src/components";
 
 import React, { Children, useState } from "react";
 import { Space } from "antd";

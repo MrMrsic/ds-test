@@ -64,3 +64,5 @@ export const TimePicker = (props: TimePickerProps) => {
     </div>
   );
 };
+
+export default TimePicker;

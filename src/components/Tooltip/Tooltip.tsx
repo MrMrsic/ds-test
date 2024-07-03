@@ -40,3 +40,5 @@ export const Tooltip = (props: AntTooltipProps) => {
     </ConfigProvider>
   );
 };
+
+export default Tooltip;

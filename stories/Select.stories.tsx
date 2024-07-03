@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { SearchOutlined } from "@ant-design/icons";
-import { Select } from "../src/components/Select";
+import { Select } from "../src/components";
 
 import React from "react";
 import { Space } from "antd";

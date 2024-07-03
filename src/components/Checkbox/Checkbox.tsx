@@ -31,3 +31,5 @@ export const Checkbox = (props: AntCheckboxProps) => {
     </ConfigProvider>
   );
 };
+
+export default Checkbox;

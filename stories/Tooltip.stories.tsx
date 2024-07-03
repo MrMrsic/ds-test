@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Tooltip } from "../src/components/Tooltip";
-import { Button } from "../src/components/Button";
+import { Tooltip } from "../src/components";
 
 import React, { Children, useState } from "react";
 import { Space } from "antd";

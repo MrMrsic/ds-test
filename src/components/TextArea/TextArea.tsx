@@ -68,3 +68,5 @@ export const TextArea = (props: TextfieldProps | any) => {
     </div>
   );
 };
+
+export default TextArea;

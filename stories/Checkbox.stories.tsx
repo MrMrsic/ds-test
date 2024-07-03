@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { SearchOutlined } from "@ant-design/icons";
-import { Checkbox } from "../src/components/Checkbox";
+import { Checkbox } from "../src/components/Checkbox/Checkbox";
 
 import React from "react";
 import { Space } from "antd";
