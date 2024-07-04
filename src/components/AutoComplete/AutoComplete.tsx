@@ -13,6 +13,8 @@ interface AutoCompleteProps extends AntAutoCompleteProps {
   label?: string;
   required?: boolean;
   helperText?: string;
+  fullwidth?: boolean;
+  badgeIcon?: any;
 }
 
 const AutoCompleteStyles: any = {
@@ -29,7 +31,11 @@ export const AutoComplete = (props: AutoCompleteProps) => {
     ? `${styles.iki_autocomplete} ${props?.className}`
     : styles.iki_autocomplete;
   return (
-    <div className={styles.iki_autocomplete_wrapper}>
+    <div
+      className={cx(styles.iki_autocomplete_wrapper, {
+        fullwidth: props?.fullwidth,
+      })}
+    >
       {props?.label && (
         <div className={styles.label_holder}>
           <span className={cx(styles.label, { is_required: props?.required })}>
@@ -64,6 +70,15 @@ export const AutoComplete = (props: AutoCompleteProps) => {
             {props?.helperText}
           </span>
         </div>
+      )}
+      {props?.badgeIcon && (
+        <span
+          className={cx(styles.badgeIcon_holder, {
+            move_up: props?.helperText,
+          })}
+        >
+          {props?.badgeIcon}
+        </span>
       )}
     </div>
   );

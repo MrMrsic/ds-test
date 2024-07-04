@@ -1,21 +1,28 @@
 {
   "name": "test-monday-ui-react-core",
-  "version": "0.0.34",
+  "version": "0.0.36",
   "description": "",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "types": "./lib",
+  "module": "esm/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "clean": "rimraf dist/",
-    "copy-files": "copyfiles -u 1 src/styles/*.css src/**/*.css dist/",
-    "build": "npm run clean && tsc && npm run copy-files"
+    "clean": "rimraf lib/ && rimraf esm/",
+    "copy-files": "copyfiles -u 1 src/styles/*.css src/**/*.css lib/",
+    "build": "npm run clean && set NODE_OPTIONS='--max-old-space-size=4096' npm run build:cjs && npm run build:esm && npm run copy-files",
+    "build:cjs": "tsc",
+    "build:esm": "tsc -m es6 --outDir esm"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "files": [
-    "dist"
+    "esm",
+    "lib",
+    "src",
+    "emotion.d.ts"
   ],
   "dependencies": {
     "antd": "^5.18.1"

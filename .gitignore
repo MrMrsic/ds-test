@@ -10,3 +10,5 @@ package-lock.json
 # Build / generate output
 /dist
 /build
+/esm
+/lib

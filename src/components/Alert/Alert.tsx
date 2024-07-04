@@ -6,8 +6,6 @@ import {
 } from "antd";
 import lightTheme from "../../styles/lightAntdTheme";
 import styles from "./Alert.module.css";
-import classNames from "classnames/bind";
-let cx = classNames.bind(styles);
 
 const AlertStyles: any = {
   colorInfo: "rgb(99, 114, 130)",

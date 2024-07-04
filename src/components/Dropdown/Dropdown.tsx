@@ -6,8 +6,6 @@ import {
 } from "antd";
 import lightTheme from "../../styles/lightAntdTheme";
 import styles from "./Dropdown.module.css";
-import classNames from "classnames/bind";
-let cx = classNames.bind(styles);
 
 const DropdownStyles: any = {};
 

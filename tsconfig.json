@@ -1,16 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "resolveJsonModule": true,
-    "rootDir": "src",
-    "outDir": "dist",
     "strict": true,
-    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "module": "esnext",
+    "moduleResolution": "Bundler",
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "target": "es6",
+    "lib": ["dom", "es2017"],
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react-jsx"
+    "stripInternal": true,
+    "resolvePackageJsonExports": true
   },
-  "include": ["src/**/*"]
+  "outDir": "./lib",
+  "rootDirs": ["src", "stories"],
+  "skipLibCheck": true,
+  "include": ["src/**/*", "*.d.ts"],
+  "exclude": ["node_modules"]
 }

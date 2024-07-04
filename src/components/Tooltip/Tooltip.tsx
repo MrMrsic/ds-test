@@ -6,8 +6,6 @@ import {
 } from "antd";
 import lightTheme from "../../styles/lightAntdTheme";
 import styles from "./Tooltip.module.css";
-import classNames from "classnames/bind";
-let cx = classNames.bind(styles);
 
 const TooltipStyles: any = {
   colorBgSpotlight: lightTheme?.tooltipBg,

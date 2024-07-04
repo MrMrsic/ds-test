@@ -13,6 +13,8 @@ interface SelectProps extends AntSelectProps {
   label?: string;
   required?: boolean;
   helperText?: string;
+  fullwidth?: boolean;
+  badgeIcon?: any;
 }
 
 const SelectStyles: any = {
@@ -28,7 +30,11 @@ export const Select = (props: SelectProps) => {
     ? `${styles.iki_select} ${props?.className}`
     : styles.iki_select;
   return (
-    <div className={styles.iki_select_wrapper}>
+    <div
+      className={cx(styles.iki_select_wrapper, {
+        fullwidth: props?.fullwidth,
+      })}
+    >
       {props?.label && (
         <div className={styles.label_holder}>
           <span className={cx(styles.label, { is_required: props?.required })}>
@@ -76,6 +82,15 @@ export const Select = (props: SelectProps) => {
               {props?.helperText}
             </span>
           </div>
+        )}
+        {props?.badgeIcon && (
+          <span
+            className={cx(styles.badgeIcon_holder, {
+              move_up: props?.helperText,
+            })}
+          >
+            {props?.badgeIcon}
+          </span>
         )}
       </ConfigProvider>
     </div>

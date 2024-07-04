@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Input as AntInput,
-  InputProps as AntInputProps,
-  ConfigProvider,
-} from "antd";
+import { InputProps as AntInputProps, ConfigProvider } from "antd";
 //import CompoundedComponent from "antd/lib/input/TextArea";
 import { default as AntTextArea } from "antd/lib/input/TextArea";
 import styles from "./TextArea.module.css";

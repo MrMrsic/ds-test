@@ -1,5 +1,4 @@
 import React from "react";
-import { ConfigProvider } from "antd";
 import { default as AntIcon } from "@ant-design/icons";
 import type { GetProps } from "antd";
 import styles from "./Icon.module.css";

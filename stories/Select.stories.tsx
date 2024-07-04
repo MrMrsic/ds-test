@@ -113,6 +113,9 @@ export const SearchAndSelect = {
             showSearch
             style={{ width: 300 }}
             mode="tags" // mode="multiple"
+            badgeIcon={
+              <span style={{ fontStyle: "italic", fontSize: "12px" }}>(x)</span>
+            }
           />
         </Space.Compact>
       </Space>
