@@ -1,0 +1,11 @@
+:root {
+  --main-font-family: "Inter", sans-serif;
+  --error: #fe4646;
+  --errorText: #ec4a41; /* #a61a1a */
+  --hoverBorderColor: #10181b;
+  --mainTextColor: #10181b;
+  --secondaryTextColor: #637282;
+  --radioActiveButtonBg: #e8e6ec;
+  --radioButtonBorderColor: #e8e6ec;
+  --secondaryColor: #bfcbd8;
+}

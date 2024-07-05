@@ -1,0 +1,37 @@
+.iki_btn {
+  /*font-weight: 800 !important;*/
+  gap: 6px !important;
+}
+
+.iki_btn :global(.ant-btn-icon) {
+  display: inline-flex;
+}
+
+/*.iki_btn:global(.ant-btn-icon:not(.ant-btn-icon-only) svg) {
+  height: 14px;
+  width: auto;
+}*/
+/*
+  max-width: 16px;
+  justify-content: center;
+*/
+.iki_btn :global(.ant-btn-icon svg) {
+  height: 14px;
+  width: auto;
+}
+.iki_btn:global(.ant-btn-default.ant-btn-sm .ant-btn-icon svg) {
+  height: 11px;
+}
+.iki_btn:global(.ant-btn-lg .ant-btn-icon svg) {
+  height: 17px;
+}
+
+.iki_btn:global(.ant-btn-default .ant-btn-icon svg) {
+  fill: #10181b;
+}
+.iki_btn:global(.ant-btn-primary .ant-btn-icon svg) {
+  fill: #fff;
+}
+.iki_btn:disabled :global(.ant-btn-icon svg) {
+  fill: rgba(0, 0, 0, 0.16) !important;
+}

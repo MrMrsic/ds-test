@@ -1,0 +1,64 @@
+@import "../../styles/cssGlobalVars.css";
+
+.iki_select_wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+.iki_select_wrapper.fullwidth {
+  width: 100%;
+}
+
+.iki_select {
+}
+.iki_select:hover :global(.ant-select-selector) {
+  border-color: var(--hoverBorderColor) !important;
+  box-shadow: 0 0 0 transparent !important;
+}
+
+.label_holder {
+  margin-bottom: 4px;
+}
+.label_holder .label {
+  position: relative;
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.label_holder .label.is_required::after {
+  content: "*";
+}
+.label_holder .label_required {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.helperText_holder {
+  margin-top: 4px;
+}
+.helperText_holder .helperText {
+  color: #676879;
+  font-family: var(--main-font-family);
+  font-size: 14px;
+}
+.helperText_holder .helperText.is_error {
+  color: var(--errorText);
+}
+
+.badgeIcon_holder {
+  position: absolute;
+  right: -8px;
+  bottom: -11px;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  padding: 2px;
+  border: 1px solid #d9d9d9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

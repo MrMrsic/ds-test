@@ -1,0 +1,9 @@
+@import "../../styles/cssGlobalVars.css";
+
+.iki_tooltip {
+  font-family: var(--main-font-family);
+
+  :global(.ant-tooltip-inner) {
+    padding: 8px !important;
+  }
+}

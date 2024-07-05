@@ -1,0 +1,74 @@
+@import "../../styles/cssGlobalVars.css";
+
+.iki_textfield_wrapper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+}
+.iki_textfield_wrapper.fullwidth {
+  width: 100%;
+}
+
+.label_holder {
+  margin-bottom: 4px;
+}
+.label_holder .label {
+  position: relative;
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.label_holder .label.is_required::after {
+  content: "*";
+}
+.label_holder .label_required {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.iki_textfield {
+}
+
+.helperText_holder {
+  margin-top: 2px;
+}
+.helperText_holder .helperText {
+  color: #676879;
+  font-family: var(--main-font-family);
+  font-size: 13px;
+}
+.helperText_holder .helperText.is_error {
+  color: var(--errorText);
+}
+
+.iki_textfield :global(.ant-input-prefix svg) {
+  width: 18px;
+  height: auto;
+  fill: #8898a9;
+}
+
+.iki_textfield :global(.ant-input-suffix) {
+  display: inline-block;
+}
+.iki_textfield :global(.ant-input-show-count-suffix) {
+  font-size: 12px;
+  letter-spacing: -0.8px;
+}
+
+.badgeIcon_holder {
+  position: absolute;
+  right: -8px;
+  bottom: -11px;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+  padding: 2px;
+  border: 1px solid #d9d9d9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

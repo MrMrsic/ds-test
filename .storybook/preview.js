@@ -1,4 +1,5 @@
 /** @type { import('@storybook/react').Preview } */
+
 const preview = {
   parameters: {
     controls: {
@@ -7,6 +8,7 @@ const preview = {
         date: /Date$/i,
       },
     },
+    //actions: { argTypesRegex: "^on[A-Z].*" },
   },
 };
 

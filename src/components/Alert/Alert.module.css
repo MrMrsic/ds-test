@@ -1,0 +1,11 @@
+@import "../../styles/cssGlobalVars.css";
+
+.iki_alert {
+  font-family: var(--main-font-family);
+}
+.iki_alert :global(.ant-alert-message) {
+  color: var(--mainTextColor) !important;
+}
+.iki_alert :global(.ant-alert-description) {
+  color: var(--secondaryTextColor) !important;
+}

@@ -1,0 +1,46 @@
+@import "../../styles/cssGlobalVars.css";
+
+.iki_toggle_wrapper {
+  display: flex;
+  align-items: center;
+}
+.iki_toggle_wrapper.hasTopLabel {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.iki_toggle {
+  border-radius: 4px;
+  /*background-color: rgba(0, 0, 0, 0.45);*/
+  background-color: #e3e9ef;
+}
+.iki_toggle :global(.ant-switch-handle::before) {
+  border-radius: 4px;
+}
+.iki_toggle:global(.ant-switch-checked) {
+  background-color: #414d5a;
+}
+.iki_toggle :global(.ant-switch-inner-unchecked) {
+  color: #414d5a !important;
+}
+.iki_toggle:hover:global:not(.ant-switch-checked) {
+  background-color: #d6dde4;
+}
+
+.label {
+  position: relative;
+  font-family: var(--main-font-family);
+  font-size: 14px;
+}
+.label.top {
+  display: block;
+  margin-bottom: 4px;
+}
+.label.left {
+  margin-right: 6px;
+}
+.label.right {
+  margin-left: 6px;
+}

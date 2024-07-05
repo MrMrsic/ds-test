@@ -1,0 +1,52 @@
+@import "../../styles/cssGlobalVars.css";
+
+.iki_datepicker_wrapper {
+}
+
+.label_holder {
+  margin-bottom: 4px;
+}
+.label_holder .label {
+  position: relative;
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.label_holder .label.is_required::after {
+  content: "*";
+}
+.label_holder .label_required {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.iki_datepicker {
+  min-height: 32px;
+}
+
+.helperText_holder {
+  margin-top: 2px;
+}
+.helperText_holder .helperText {
+  color: #676879;
+  font-family: var(--main-font-family);
+  font-size: 13px;
+}
+.helperText_holder .helperText.is_error {
+  color: var(--errorText);
+}
+
+.iki_datepicker :global(.ant-input-prefix svg) {
+  width: 18px;
+  height: auto;
+  fill: #8898a9;
+}
+
+.iki_datepicker :global(.ant-input-suffix) {
+  display: inline-block;
+}
+.iki_datepicker :global(.ant-input-show-count-suffix) {
+  font-size: 12px;
+  letter-spacing: -0.8px;
+}
